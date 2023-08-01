@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cleaner</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading-primary">Фильтр</h1>
+        <div class="interaction-box">
+            <div class="base-box">
+                <h2 class="heading-secondary">База</h2>
+                <textarea id="unsorted-box"></textarea>
+                <button class="filter">Отфильтровать</button>
+            </div>
+            <div class="values-box">
+                <div>
+                    <h2 class="heading-secondary">Недопустимые значения</h2>
+                    <textarea id="invalid-box"></textarea>
+                </div>
+                <div>
+                    <h2 class="heading-secondary">Валидные адреса</h2>
+                    <textarea id="valid-box"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="result-box">
+            <textarea id="sorted-box"></textarea>
+            <button class="copy">Скопировать</button>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
